@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(red, yellow, green);
+    border : 2px solid green;
+    border-radius: 50%;
+    position: relative;
+
+    /* Amimation Property  */
+    animation-name: box;
+    animation-duration: 5s;
+    animation-delay: 2s all;
+    animation-iteration-count: infinite;
+}
+
+    @keyframes box{
+        0%{
+            top: 0;
+            left:0;
+        }
+        25%{
+            top: 0;
+            left: 500px;
+        }
+        50%{
+            top: 500px;
+            left: 500px;
+        }
+        75%{
+            top: 500px;
+            left: 0;
+        }
+        100%{
+            top: 0;
+            left: 0;
+        }
+    }
